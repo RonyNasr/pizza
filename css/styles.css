@@ -1,1 +1,27 @@
-/*This file is for your custom css.  All yours*/
+#display {
+  margin-top: 30px;
+  border-top: 1px dotted lightgrey;
+}
+
+.pizza-list{
+  margin: 5px 0px;
+  border-bottom: 1px dotted lightgrey;
+}
+
+.details{
+  text-align: right;
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+#pizza-display {
+  display: none;
+  margin-top: 10px;
+  /*border-right: 1px dotted lightgrey;*/
+}
+
+#topping-display{
+    display: none;
+    border-left: 1px dotted lightgrey;
+}

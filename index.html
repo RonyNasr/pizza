@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Web Development Template</title>
+    <title>Pizza Place</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
 
     <!-- Bootstrap core CSS -->
@@ -31,15 +31,55 @@
   <body>
     <div class="container">
       <header>
-        <h1>Epicodus Project Template</h1>
+        <h1>Pizza Place</h1>
       </header>
-      <h2>Hello World!</h2>
-      <p>
-        This is a nice little index file.  It calls in five different files to support Bootstrap, JQuery, and your custom css and js.
-      </p>
-      <footer>
-        <p>&copy; 2016 Epicodus Pair Project, Inc.</p>
-      </footer>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="new-type">Size</label>
+            <select class="form-control" id="size">
+              <option value="s" class="8.99">Small - 10" / 25 cm</option>
+              <option value="m" class="10.99">Medium - 12" / 30 cm</option>
+              <option value="l" class="15.99">Large - 14" / 35 cm</option>
+              <option value="f" class="21.99">Family - 16" / 40 cm</option>
+            </select>
+          </div>
+          <span class="btn btn-primary" id="select-size">Select size</span>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="toppings">Toppings</label>
+            <select class="form-control" id="toppings">
+            </select>
+          </div>
+          <span class="btn btn-primary" id="add-top">add</span>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="cheese">Cheese</label>
+            <select class="form-control" id="cheeses">
+            </select>
+          </div>
+          <span class="btn btn-primary" id="add-cheese">add</span>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="extras">Extras</label>
+            <select class="form-control" id="extras">
+            </select>
+          </div>
+          <span class="btn btn-primary" id="add-extras">add</span>
+        </div>
+      </div>
+
+      <div class="row" id="display">
+        <div class="col-md-6" id="pizza-display">
+          <!-- <h2>Pizza: </h2> -->
+        </div>
+        <div class="col-md-6" id="topping-display">
+          <!-- <h2>Toppings: </h2> -->
+        </div>
+      </div>
     </div> <!-- end container -->
   </body>
 </html>
