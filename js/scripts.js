@@ -178,55 +178,55 @@ $(function (){
         $("#topping-display").show();
       }
     });
+  });
 
-    $("#add-top").click(function(){
-      var toppingId = $("select#toppings :selected").val();
-      var toppingName = $("select#toppings :selected").text();
-      var toppingPrice = $("select#toppings :selected").attr('class');
-      var newTopping =  new Topping("veggies",toppingId,toppingName,toppingPrice);
-      // debugger;
-      // console.log($("select#size :selected").attr('class'));
-      newOrder.pizza[newOrder.pizza.length-1].addTopping(newTopping);
-      $("#topping-display").empty();
-      $("#topping-display").append(newOrder.pizza[newOrder.pizza.length-1].listTops());
-      $("#topping-display").show();
-      $("#pizza-display").empty();
-      $("#pizza-display").append(newOrder.list());
-      $("#pizza-display").show();
-    });
+  $("#add-top").click(function(){
+    var toppingId = $("select#toppings :selected").val();
+    var toppingName = $("select#toppings :selected").text();
+    var toppingPrice = $("select#toppings :selected").attr('class');
+    var newTopping =  new Topping("veggies",toppingId,toppingName,toppingPrice);
+    // debugger;
+    // console.log($("select#size :selected").attr('class'));
+    newOrder.pizza[newOrder.pizza.length-1].addTopping(newTopping);
+    $("#topping-display").empty();
+    $("#topping-display").append(newOrder.pizza[newOrder.pizza.length-1].listTops());
+    $("#topping-display").show();
+    $("#pizza-display").empty();
+    $("#pizza-display").append(newOrder.list());
+    $("#pizza-display").show();
+  });
 
-    $("#add-cheese").click(function(){
-      var toppingId = $("select#cheeses :selected").val();
-      var toppingName = $("select#cheeses :selected").text();
-      var toppingPrice = $("select#cheeses :selected").attr('class');
-      var newTopping =  new Topping("cheese",toppingId,toppingName,toppingPrice);
-      //console.log($("select#size :selected").attr('class'));
-      newOrder.pizza[newOrder.pizza.length-1].addTopping(newTopping);
-      $("#topping-display").empty();
-      $("#topping-display").append(newOrder.pizza[newOrder.pizza.length-1].listTops());
-      $("#topping-display").show();
-      $("#pizza-display").empty();
-      $("#pizza-display").append(newOrder.list());
-      $("#pizza-display").show();
-    });
+  $("#add-cheese").click(function(){
+    var toppingId = $("select#cheeses :selected").val();
+    var toppingName = $("select#cheeses :selected").text();
+    var toppingPrice = $("select#cheeses :selected").attr('class');
+    var newTopping =  new Topping("cheese",toppingId,toppingName,toppingPrice);
+    //console.log($("select#size :selected").attr('class'));
+    newOrder.pizza[newOrder.pizza.length-1].addTopping(newTopping);
+    $("#topping-display").empty();
+    $("#topping-display").append(newOrder.pizza[newOrder.pizza.length-1].listTops());
+    $("#topping-display").show();
+    $("#pizza-display").empty();
+    $("#pizza-display").append(newOrder.list());
+    $("#pizza-display").show();
+  });
 
-    $("#add-extras").click(function(){
-      var toppingId = $("select#extras :selected").val();
-      var toppingName = $("select#extras :selected").text();
-      var toppingPrice = $("select#extras :selected").attr('class');
-      var newTopping =  new Topping("extras",toppingId,toppingName,toppingPrice);
-      //console.log($("select#size :selected").attr('class'));
-      newOrder.pizza[newOrder.pizza.length-1].addTopping(newTopping);
-      $("#topping-display").empty();
-      $("#topping-display").append(newOrder.pizza[newOrder.pizza.length-1].listTops());
-      $("#topping-display").show();
-      $("#pizza-display").empty();
-      $("#pizza-display").append(newOrder.list());
-      $("#pizza-display").show();
-    });
+  $("#add-extras").click(function(){
+    var toppingId = $("select#extras :selected").val();
+    var toppingName = $("select#extras :selected").text();
+    var toppingPrice = $("select#extras :selected").attr('class');
+    var newTopping =  new Topping("extras",toppingId,toppingName,toppingPrice);
+    //console.log($("select#size :selected").attr('class'));
+    newOrder.pizza[newOrder.pizza.length-1].addTopping(newTopping);
+    $("#topping-display").empty();
+    $("#topping-display").append(newOrder.pizza[newOrder.pizza.length-1].listTops());
+    $("#topping-display").show();
+    $("#pizza-display").empty();
+    $("#pizza-display").append(newOrder.list());
+    $("#pizza-display").show();
   });
 
 
 
 
-});
+});   // end front end 
