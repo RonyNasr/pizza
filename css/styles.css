@@ -8,7 +8,7 @@
   border-bottom: 1px dotted lightgrey;
 }
 
-.details{
+.details, .remove{
   text-align: right;
   text-decoration: underline;
   color: blue;
