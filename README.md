@@ -10,16 +10,16 @@ This project allows users to select pizzas and add as many ingredients as they l
 
 ## Project Specification (BDD)
 
-        Behavior              |       Input           |        Output         
-  Display sizes and toppings  | Page loads            | List sizes and toppings
-  User chooses a size         | small                 | pizza{size: small}
-  Pizza object created        | pizza{size: small}    | Display pizza and size
-  Add topping                 | tomatoes              | pizza {size: small, toppings: [tomato]}
-  topping added to pizza      | toppings: [tomatoes]  | Display topping
-  Calculate new price         | pizza{..,price: $12)  | pizza:{..,price: $14}
-  Add another pizza           | medium                | order {pizza:small,pizza:medium}
-  Calculate new total         | pizza {medium, $15}   | order Total $29
-  view pizza contents         | click "details"       | tomatoes, cheese, etc.
+*        Behavior              |       Input           |        Output         
+*  Display sizes and toppings  | Page loads            | List sizes and toppings
+*  User chooses a size         | small                 | pizza{size: small}
+*  Pizza object created        | pizza{size: small}    | Display pizza and size
+*  Add topping                 | tomatoes              | pizza {size: small, toppings: [tomato]}
+*  topping added to pizza      | toppings: [tomatoes]  | Display topping
+*  Calculate new price         | pizza{..,price: $12)  | pizza:{..,price: $14}
+*  Add another pizza           | medium                | order {pizza:small,pizza:medium}
+*  Calculate new total         | pizza {medium, $15}   | order Total $29
+*  view pizza contents         | click "details"       | tomatoes, cheese, etc.
 
 
 
